@@ -1,0 +1,30 @@
+saldo = 0
+
+while True:
+print("\n=== CONTROLE FINANCEIRO ===")
+print("1 - Adicionar receita")
+print("2 - Adicionar despesa")
+print("3 - Ver saldo")
+print("4 - Sair")
+
+opcao = input("Escolha uma opção: ")
+
+if opcao == "1":
+valor = float(input("Digite o valor da receita: R$ "))
+saldo += valor
+print("Receita adicionada com sucesso!")
+
+elif opcao == "2":
+valor = float(input("Digite o valor da despesa: R$ "))
+saldo -= valor
+print("Despesa adicionada com sucesso!")
+
+elif opcao == "3":
+print(f"Saldo atual: R$ {saldo:.2f}")
+
+elif opcao == "4":
+print("Programa encerrado.")
+break
+
+else:
+print("Opção inválida!")
